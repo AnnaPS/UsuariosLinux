@@ -123,7 +123,7 @@ echo -e "\e[92mUsuario creado correctamente"
 
 sleep 2
 clear
-./UsuariosAna.sh
+./Usuarios.sh
 
 ;;
 
@@ -137,7 +137,7 @@ read user2
 userdel -f -r $user2
 echo -e "\e[92mse borro el usuario $user2\e[0m"
 sleep 2
-./UsuariosAna.sh
+./Usuarios.sh
 ;;
 
 #Crear grupo
@@ -148,7 +148,7 @@ groupadd $grup
 echo -e "\e[92mse inserto correctamente el grupo $grup\e[0m"
 sleep 2
 
-./UsuariosAna.sh
+./Usuarios.sh
 ;;
 
 # Cambiar contraseña usuario
@@ -159,7 +159,7 @@ passwd $us
 echo -e "\e[96mse cambio la contraseña al usuario $us con exito\e[0m"
 sleep 2
 clear
-./UsuariosAna.sh
+./Usuarios.sh
 ;;
 
 # Cambiar nombre usuario
@@ -172,7 +172,7 @@ usermod -l $usu $nombre
 echo -e "\e[92mEl nuevo nombre de usuario es $usu\e[0m"
 sleep 2
 echo "\e[92mnombre de usuario cambiado correctamente\e[0m"
-./UsuariosAna.sh
+./Usuarios.sh
 ;;
 
 #Consultar informacion usuario
@@ -180,7 +180,7 @@ echo "\e[92mnombre de usuario cambiado correctamente\e[0m"
 read user
 id $user
 sleep 2
-./UsuariosAna.sh
+./Usuarios.sh
 
 ;;
 #Consultar usuarios logueados y usuarios dados de alta en el sistema
@@ -192,7 +192,7 @@ echo -e "\e[96mAcontinuacion se muestran los usuarios que pertenecen al sistema\
 ls /home/
 sleep 2
 
-./UsuariosAna.sh
+./Usuarios.sh
 
 ;;
 
@@ -208,7 +208,7 @@ echo ""
 echo  -e "\e[92mSe añadio $nomb a $gr\e[0m"
 sleep 2
 
-./UsuariosAna.sh
+./Usuarios.sh
 
 ;;
 
@@ -224,7 +224,7 @@ exit
 
 sleep 2
 clear
-./UsuariosAna.sh
+./Usuarios.sh
 
 ;;
 
